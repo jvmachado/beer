@@ -21,8 +21,8 @@ public class Sensor {
 	}
 
 	private BigDecimal checkTemperatureChange() {
-		double upper = 1;
-		double lower = -1;
+		double upper = 0.1;
+		double lower = -0.1;
 		return new BigDecimal(Math.random() * (upper - lower) + lower).setScale(2, RoundingMode.CEILING);
 	}
 }
